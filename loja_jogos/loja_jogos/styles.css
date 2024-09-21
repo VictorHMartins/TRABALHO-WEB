@@ -1,0 +1,142 @@
+/* Configuração básica */
+body {
+    font-family: 'Press Start 2P', cursive; /* Fonte com estilo retro */
+    background-color: #000; /* Fundo preto para dar contraste ao tema retro */
+    color: #00ff99; /* Cor verde neon para o texto */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1, h2 {
+    color: #ff0055; /* Cor vibrante para títulos */
+    text-shadow: 2px 2px 0px #00ff99, -2px -2px 0px #ff0055; /* Efeito neon nos títulos */
+    font-size: 2em;
+}
+
+a {
+    color: #00ff99;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ff0055; /* Efeito hover para links */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px auto;
+    display: inline-block;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+input[type="submit"] {
+    background-color: #ff0055;
+    color: white;
+    border: 2px solid #00ff99;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    transform: scale(1.1); /* Botão aumenta de tamanho quando o mouse passa */
+    background-color: #00ff99;
+    color: #ff0055;
+    border-color: #ff0055;
+}
+
+form input, form select {
+    font-family: 'Press Start 2P', cursive;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #111;
+    color: #00ff99;
+    border: 2px solid #00ff99;
+    outline: none;
+    transition: border 0.3s ease, background-color 0.3s ease;
+}
+
+form input:focus, form select:focus {
+    border-color: #ff0055;
+    background-color: #222;
+}
+
+table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 80%;
+    color: white;
+}
+
+table, th, td {
+    border: 2px solid #00ff99;
+    padding: 10px;
+    font-size: 1.2em;
+}
+
+th {
+    background-color: #111;
+}
+
+td {
+    background-color: #222;
+}
+
+table tr:nth-child(even) {
+    background-color: #333;
+}
+
+/* Animações */
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 5px #00ff99, 0 0 10px #00ff99, 0 0 15px #ff0055, 0 0 20px #ff0055;
+    }
+    100% {
+        box-shadow: 0 0 15px #00ff99, 0 0 30px #ff0055, 0 0 45px #ff0055, 0 0 60px #00ff99;
+    }
+}
+
+input[type="submit"]:hover {
+    animation: glow 1s infinite alternate; /* Animação neon pulsante nos botões */
+}
+
+table tr:hover {
+    background-color: #444;
+    transition: background-color 0.3s ease;
+}
+
+ul li:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+/* Animação de título */
+h1, h2 {
+    animation: flicker 2s infinite alternate;
+}
+
+@keyframes flicker {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.8;
+        filter: blur(2px);
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+footer {
+    margin-top: 20px;
+    color: #00ff99;
+}
